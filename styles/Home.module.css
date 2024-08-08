@@ -1,0 +1,151 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+  padding-left: 150px;
+}
+
+.navigation {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.2rem;
+  position: relative;
+  transition: color 0.3 ease;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #007bff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.navLink:hover::after {
+  transform: scaleX(1);
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 800px;
+  padding-left: 150px;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.greeting, .title, .description{
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 0.5s ease forwards;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1;
+  animation-delay: 0.2s;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  margin-top: 0;
+  display: inline-block;
+  animation-delay: 0.2s;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-top:0;
+  animation-delay: 0.2s;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.cta {
+  display: flex;
+  gap: 1rem;
+}
+
+.ctaButton {
+  padding: 0.75rem 1.5rem;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #555;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.footer nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.footerLink {
+  color: #666;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .cta {
+    flex-direction: column;
+  }
+}
