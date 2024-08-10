@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from '../styles/About.module.css';
 
 const Aboutpt = () => ( 
@@ -52,7 +53,7 @@ const Aboutpt = () => (
                 </div>
                 <div className="w-full self-end px-4 lg:w-1/2 flex justify-center items-start" style={{ alignSelf: 'flex-start' }}>
                     <div className="mt-10 lg:mt-0">
-                        <img src="/assets/img/pas-foto.jpg" alt="profile picture" className="rounded-lg" style={{ height: '400px', width: '300px', borderRadius: '20px' }}></img>
+                        <image src="/assets/img/pas-foto.jpg" alt="profile picture" className="rounded-lg" style={{ height: '400px', width: '300px', borderRadius: '20px' }} />
                     </div>
                 </div>
             </div>
