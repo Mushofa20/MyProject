@@ -49,6 +49,7 @@
 .main {
   flex-grow: 1;
   display: flex;
+  min-height:calc(100vh - 145px);
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -114,13 +115,7 @@
   background-color: #555;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-  font-size: 0.9rem;
-}
+
 
 .footer nav {
   display: flex;
