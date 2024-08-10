@@ -19,7 +19,7 @@ const Home = () => (
       </nav>
     </header>
     <main className={styles.main}>
-      <h2 className={styles.greeting}>Hello! I'm <b>Ahmad Mushofa Salsabil.</b></h2>
+      <h2 className={styles.greeting}>Hello! I&apos;m <b>Ahmad Mushofa Salsabil.</b></h2>
       <h1 className={styles.title}>
         I do everything i like<br />
         for now, I do some websites development.
@@ -27,7 +27,7 @@ const Home = () => (
       <p className={styles.description}>
         I recently learned programming algorithms and coding, While I may not claim mastery over any single domain, 
         I take pride in my expertise in one essential area: <b>the dedication and hard work I bring to everything I do</b>. 
-        I'm highly interested in exploring frontend and
+        I&apos;m highly interested in exploring frontend and
         backend engineering.
       </p>
       <div className={styles.cta}>
