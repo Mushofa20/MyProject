@@ -36,7 +36,7 @@ const Aboutpt = () => (
                         Who am I?
                         </h1>
                         <p className="text-base text-gray-600 pt-5" style={{ fontSize: '1.1rem', lineHeight: '1.5' }}>
-                           A bachelor's degree in Biology education. I am a Biology teacher who loves to learn and teach. 
+                           A bachelor&apos;s degree in Biology education. I am a Biology teacher who loves to learn and teach. 
                            I am also an amateur web developer who are still learning to create and develop a website.
                            I am actively seeking full-time remote or hybrid roles as website developer and data development.
                            My expertise lies in web development and data-centric technologies, with orientation on both frontend and backend.
