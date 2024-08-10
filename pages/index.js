@@ -3,9 +3,10 @@ import Link from 'next/link';
 import styles from '../styles/Home.module.css'; 
 
 const Home = () => ( 
-  <div className={styles.container}>
+  <div className="main">
     <Head>
       <title>Ahmad Mushofa Salsabil</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       <link rel="icon" href="/alfabet.ico"/>
     </Head> 
     <header className={styles.header}>
@@ -34,15 +35,11 @@ const Home = () => (
         <Link href="/projects" className={styles.ctaButton}>Explore My Work ↓</Link>
       </div>
     </main>
-    <footer className={styles.footer}>
-      <nav>
-        <Link href="/about" className={styles.footerLink}>About</Link>
-        <Link href="/blog" className={styles.footerLink}>Blog</Link>
-        <Link href="/projects" className={styles.footerLink}>Projects</Link>
-      </nav>
+
+    <footer className={styles.footer} style={{ textAlign: 'right' }}>
       <p>©2024 Ahmad Mushofa Salsabil. All rights reserved.</p>
     </footer>
-  </div> 
+    </div>
 );
 
 export default Home;
