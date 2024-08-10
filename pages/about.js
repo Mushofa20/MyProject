@@ -28,7 +28,7 @@ const Aboutpt = () => (
                         Hallo guys, I am <span className="block font-bold text-gray-900 text-4xl">Ahmad Mushofa Salsabil</span>
                     </h1>
                     <h2 className="text-base text-gray-600">
-                        A Science Teacher & Amateur Web Dev
+                        A Science Teacher &amp; Amateur Web Dev
                     </h2>
                     <div className="pt-8">
                         <h1 className="text-base font-bold text-gray-900" style={{ fontSize: '1.5rem' }}>
