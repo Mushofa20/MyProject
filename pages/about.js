@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/About.module.css';
 
-const Aboutpt = () => ( 
+const About = () => ( 
 <div className="main">
 <Head>
       <title>About Ahmad Mushofa Salsabil</title>
@@ -62,4 +62,4 @@ const Aboutpt = () => (
 </main>
 </div> 
 ); 
-export default Aboutpt;
+export default About;
